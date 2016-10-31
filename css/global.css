@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Indie Flower', cursive;
+  background-color: #ebdd60;
+}
+
+.row {
+  border-left: 1px solid red;
+  padding: 0px;
+}
+
+.headerBG h1, .headerBG span {
+  margin: 0;
+}
+
+.headerBG h1 {
+  font-size: 60px;
+}
+
+.header-margin {
+  margin: 10px 0px 5px 0px;
+}
+
+#inputItems {
+  height: 45px;
+  font-size: 25px;
+}
+
+.margin {
+  font-size: 25px;
+  margin-top: 10px;
+  word-wrap: break-word;
+  border-bottom: 1px solid black;
+}

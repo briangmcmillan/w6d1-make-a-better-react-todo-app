@@ -1,0 +1,44 @@
+//Global CSS
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: rgb(235, 221, 96);
+}
+
+//Body CSS
+.row {
+    border-left: 1px solid red;
+    padding: 0px;
+}
+.headerBG {
+    // width: 100%;
+    h1, span {
+        margin: 0;
+    }
+    h1 {
+        font-size: 60px;
+    }
+}
+
+.header-margin {
+    // width: 100%;
+    margin: 10px 0px 5px 0px;
+}
+
+#inputItems {
+    height: 45px;
+    font-size: 25px;
+}
+
+//Component #1 CSS
+.margin {
+    font-size: 25px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    border-bottom: 1px solid black;
+}
