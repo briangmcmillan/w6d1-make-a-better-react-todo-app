@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import TodoItem from './TodoItem'
+import TodoItem from './TodoItem'//We are importing our TodoItem constant from TodoItem.js
 
 class Todos extends Component {
     //Boiler plate line 6, 7, and 8
     constructor(props) {
         super(props)//Conects to to parent file/component
-        //Hand built methods/functions that are used later on
+        //Hand built methods/functions that are used later on. Binds together keystrokes and key presses.
         this.typing = this.typing.bind(this)
         this.enter = this.enter.bind(this)
         this.markDone = this.markDone.bind(this)
@@ -17,13 +17,13 @@ class Todos extends Component {
             todos: []
         }
     }
-
+    //typing(e) is a function that is listening for an event. Once a user begins to type, the state of typing will be set to whatever the user types as the value. That value once input will be changed to Upper Case letters.
     typing(e) {
         this.setState({
             newTodo: e.target.value.toUpperCase()
         })
     }
-
+    //enter(e) is a function that is also listening for an event to fire off. If the key that the user hits is Enter, then whatever the user typed into our input will become the new state/value of the todos property. That value will be saved into a var named updatedTodos. updatedTodos will be added to the end of our array. Finally, the state of our components newTodo property will be reset to '' and the todos property will have the new value saved under updatedTodos.
     enter(e) {
         if (e.key === 'Enter') {
             let updatedTodos = this.state.todos
@@ -39,7 +39,7 @@ class Todos extends Component {
             })
         }
     }
-
+    //markDone(i) is a function that runs if our updatedTodo items are clicked on orchecked. If true, then a our input field checkbox will be checked and a line-through the value will be set. This will only happen if markDone = true. We set this on our TodoItem.js const.
     markDone(i) {
         let updatedTodos = this.state.todos
 
